@@ -14,6 +14,7 @@
   }
 
   body {
+    max-height: 100vh;
     padding: 0;
     margin: 0;
   }
@@ -34,8 +35,17 @@
     background-color: blue;
     padding: 20px 0;
     width: 100%;
+    bottom: 0;
+    position:absolute ;
   }
 
+  /* this makes it so that once the window has extended past 750px then the footer will follow the bottom */
+  @media (max-height:750px) {
+
+    .footer {
+      position: initial;
+    }
+  }
 
 </style>
 <body>
